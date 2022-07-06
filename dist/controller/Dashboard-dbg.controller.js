@@ -9,7 +9,12 @@ sap.ui.define([
 			this.oRouter.attachRoutePatternMatched(this._onRouterMatch, this);
 		},
 
-		onManageProject: function() {
+		onCreateProject: function () {
+			debugger;
+			this.oRouter.navTo("CreateProjectRoute");
+		},
+
+		onManageProject: function () {
 			debugger;
 			this.oRouter.navTo("ManageProjectRoute");
 		},

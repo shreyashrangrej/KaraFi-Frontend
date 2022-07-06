@@ -84,6 +84,13 @@
 					]
 				},
 				{
+					"name": "CreateProjectRoute",
+					"pattern": "project/CreateProject",
+					"target": [
+						"CreateProjectTarget"
+					]
+				},
+				{
 					"name": "ManageProjectRoute",
 					"pattern": "project/ManageProject",
 					"target": [
@@ -104,6 +111,12 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "Dashboard"
+				},
+				"CreateProjectTarget": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "projectManagementViews.CreateProject"
 				},
 				"ManageProjectTarget": {
 					"viewType": "XML",

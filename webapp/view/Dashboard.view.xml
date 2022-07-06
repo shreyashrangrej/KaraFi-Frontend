@@ -18,6 +18,12 @@
 						</headerToolbar>
 						<content>
 
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create New Project" subheader="Project Wizard" press="onCreateProject">
+								<TileContent unit="Projects" footer="Total">
+									<NumericContent value="12" withMargin="false" />
+								</TileContent>
+							</GenericTile>
+
 							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Projects" subheader="Manage Projects" press="onManageProject">
 								<TileContent unit="Projects" footer="Total">
 									<NumericContent value="12" withMargin="false" />
