@@ -89,6 +89,13 @@
 					"target": [
 						"ManageProjectTarget"
 					]
+				},
+				{
+					"name": "ManageTaskRoute",
+					"pattern": "project/ManageTask",
+					"target": [
+						"ManageTaskTarget"
+					]
 				}
 			],
 			"targets": {
@@ -103,6 +110,12 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "projectManagementViews.ManageProject"
+				},
+				"ManageTaskTarget": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "projectManagementViews.ManageTask"
 				}
 			}
 		}

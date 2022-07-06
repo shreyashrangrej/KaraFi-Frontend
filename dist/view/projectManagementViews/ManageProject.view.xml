@@ -3,7 +3,7 @@
 		<pages>
 			<Page id="page" title="{i18n>title}" showHeader="false">
 				<content>
-                    <Button text="Hello" />
+                    <Button text="Manage Projects Screen" />
                 </content>
 			</Page>
 		</pages>

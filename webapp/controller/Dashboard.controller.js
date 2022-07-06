@@ -16,6 +16,7 @@ sap.ui.define([
 
 		onManageTask: function () {
 			debugger;
+			this.oRouter.navTo("ManageTaskRoute");
 		},
 
 		onManageUser: function () {

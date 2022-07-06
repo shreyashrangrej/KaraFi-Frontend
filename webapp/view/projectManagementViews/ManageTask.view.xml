@@ -1,0 +1,11 @@
+<mvc:View controllerName="com.application.sapui5-application.controller.projectManagementControllers.ManageTask" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f">
+	<App id="app">
+		<pages>
+			<Page id="page" title="{i18n>title}" showHeader="false">
+				<content>
+                    <Button text="Manage Tasks Screen" />
+                </content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
