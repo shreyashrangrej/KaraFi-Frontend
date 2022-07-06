@@ -82,6 +82,13 @@
 					"target": [
 						"DashboardTarget"
 					]
+				},
+				{
+					"name": "ManageProjectRoute",
+					"pattern": "project/ManageProject",
+					"target": [
+						"ManageProjectTarget"
+					]
 				}
 			],
 			"targets": {
@@ -90,6 +97,12 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "Dashboard"
+				},
+				"ManageProjectTarget": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "projectManagementViews.ManageProject"
 				}
 			}
 		}

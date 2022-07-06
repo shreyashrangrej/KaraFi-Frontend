@@ -18,13 +18,13 @@
 						</headerToolbar>
 						<content>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Projects" subheader="Manage Projects" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Projects" subheader="Manage Projects" press="onManageProject">
 								<TileContent unit="Projects" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
 							</GenericTile>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="All Tasks" subheader="Manage Tasks" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="All Tasks" subheader="Manage Tasks" press="onManageTask">
 								<TileContent unit="Tasks" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
@@ -41,20 +41,20 @@
 						</headerToolbar>
 						<content>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Users" subheader="Manage Users" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Users" subheader="Manage Users" press="onManageUser">
 								<TileContent unit="Users" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
 							</GenericTile>
 
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Departments" subheader="Manage Departments" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Departments" subheader="Manage Departments" press="onManageDepartment">
 								<TileContent unit="Departments" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
 							</GenericTile>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="User Roles" subheader="Manage User Roles" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="User Roles" subheader="Manage User Roles" press="onManageRoles">
 								<TileContent unit="Roles" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
@@ -71,13 +71,13 @@
 						</headerToolbar>
 						<content>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status" subheader="Manage Status" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status" subheader="Manage Status" press="onManageStatus">
 								<TileContent unit="Status" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
 							</GenericTile>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Priorities" subheader="Manage Priorities" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Priorities" subheader="Manage Priorities" press="onManagePriority">
 								<TileContent unit="Priorities" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
@@ -94,7 +94,7 @@
 						</headerToolbar>
 						<content>
 
-							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Organizations" subheader="Manage Organzations" press="press">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Organizations" subheader="Manage Organzations" press="onManageOrganization">
 								<TileContent unit="Clients" footer="Total">
 									<NumericContent value="12" withMargin="false" />
 								</TileContent>
