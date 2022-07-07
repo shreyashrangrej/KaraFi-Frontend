@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.application.sapui5-application.controller.projectManagementControllers.CreateProject" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+<mvc:View controllerName="com.application.sapui5-application.controller.projectManagementControllers.CreateProject" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:upload="sap.m.upload">
     <App id="app">
         <NavContainer id="wizardNavContainer">
             <pages>
@@ -30,9 +30,19 @@
                                 </form:SimpleForm>
                             </WizardStep>
 
-                            <WizardStep id="projectDepartment" title="Select Department" validated="true"></WizardStep>
+                            <WizardStep id="projectDepartment" title="Select Department" validated="true">
+                                <Text text="Select Department of company to which the project belongs to." />
+                                <form:SimpleForm editable="true">
+                                    <Label text="Department" required="true" />
+                                    <ComboBox showSecondaryValues="true" width="400px" items="{/}" placeholder="Select company department.">
+                                        <core:ListItem key="{/}" text="{/}" additionalText="{/}" />
+                                    </ComboBox>
+                                </form:SimpleForm>
+                            </WizardStep>
 
-                            <WizardStep id="projectFiles" title="Upload Project Files" validated="true"></WizardStep>
+                            <WizardStep id="projectFiles" title="Upload Project Files" validated="true">
+                                <!-- <upload:UploadSet id="UploadSet" instantUpload="true" showIcons="true" uploadEnabled="true" terminationEnabled="true" fileTypes="txt,doc,png" maxFileNameLength="30" maxFileSize="200" mediaTypes="text/plain,application/msword,image/jpeg" uploadUrl="../../../../upload" items="{path: '/items', templateShareable: false}" mode="MultiSelect" selectionChanged="onSelectionChange"></upload:UploadSet> -->
+                            </WizardStep>
 
                             <WizardStep id="projectDates" title="Project Timelines" validated="true"></WizardStep>
 
