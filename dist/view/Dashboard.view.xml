@@ -4,7 +4,7 @@
 			<Page id="page" title="{i18n>title}" showHeader="false">
 				<content>
 
-					<f:ShellBar title="Uttermost Head" secondTitle="Dashboard" homeIcon="" showCopilot="true" showNotifications="true" notificationsNumber="2">
+					<f:ShellBar title="karaFi" secondTitle="Dashboard" homeIcon="" showCopilot="true" showNotifications="true" notificationsNumber="2">
 						<f:profile>
 							<Avatar initials="UI" />
 						</f:profile>

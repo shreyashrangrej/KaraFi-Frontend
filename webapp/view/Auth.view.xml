@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.application.sapui5-application.controller.Auth" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <App id="app">
+        <pages>
+            <Page id="page" title="{i18n>title}" showHeader="false">
+                <content>
+                    <form:SimpleForm editable="true">
+                        <Label text="User" />
+                        <Input value="{/}" width="400px" id="idUsername" />
+                        <Label text="Password"/>
+                        <Input value="{/}" width="400px" id="idPassword" />
+                        <Label />
+                        <Button text="Login" width="100px" press="onLoginSuccess" />
+                        <Button text="Register" width="100px" />
+                    </form:SimpleForm>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

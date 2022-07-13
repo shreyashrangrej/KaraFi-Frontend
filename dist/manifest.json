@@ -56,6 +56,10 @@
 				"settings": {
 					"bundleName": "com.application.sapui5-application.i18n.i18n"
 				}
+			},
+			"EnvModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/env.json"
 			}
 		},
 		"resources": {
@@ -77,8 +81,15 @@
 			},
 			"routes": [
 				{
-					"name": "DashboardRoute",
+					"name": "AuthRoute",
 					"pattern": "",
+					"target": [
+						"AuthTarget"
+					]
+				},
+				{
+					"name": "DashboardRoute",
+					"pattern": "Dashboard",
 					"target": [
 						"DashboardTarget"
 					]
@@ -106,6 +117,12 @@
 				}
 			],
 			"targets": {
+				"AuthTarget": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Auth"
+				},
 				"DashboardTarget": {
 					"viewType": "XML",
 					"transition": "slide",
